@@ -1,0 +1,174 @@
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 10px auto;
+    background-color: #303030;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px 10px;
+    box-shadow: 0px 4px 20px var(--shadow-color);
+    white-space: wrap;
+}
+
+.content-wrapper {
+    width: calc(100vw - var(--sidebar-total) - 2*var(--padding-base));
+    height: calc(100vh - var(--header-total) - 2*var(--padding-base));
+    margin: 0 auto;
+    padding: var(--padding-base);
+    background-color: var(--background-color);
+}
+
+.game-wrapper-form {
+  min-width: min-content;
+  width: min(1500px, 100%);
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.game-wrapper-form:-webkit-scrollbar-button {
+
+}
+
+.game-card-wrapper {
+    width: 80%;
+    height: max-content;
+    margin: 10px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(max-content, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 40px;
+}
+
+.game-card-wrapper::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  background-color: var(--background-color);
+}
+
+.game-card-wrapper::-webkit-scrollbar-button {
+  display: none;
+}
+
+.game-card-wrapper::-webkit-scrollbar-thumb {
+  width: var(--scrollbar-width);
+  background-color: black;
+}
+
+.game-card-wrapper::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+}
+
+.game-card {
+    background-color: #272822;
+    position: relative;
+    color: white;
+    width: calc(100% - 8px);
+    height: max(100%, max-content);
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 4px solid #1f1f1f;
+    transition: 0.15s ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px var(--shadow-color);
+}
+
+.game-card:hover {
+    background-color: #353535;
+}
+
+.game-card:active {
+    transform: scale(0.97);
+}
+
+.active-game {
+  border: 4px solid var(--active-color-lblue);
+    background-color: var(--active-color-lblue);
+}
+
+.active-game:hover {
+    background-color: var(--active-color-lblue);
+}
+
+.game-card-title {
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+}
+
+.game-card-title-active {
+    color: #2af;
+}
+
+.game-card-image {
+    width: 90%;
+    margin: 0 5%;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+.game-card-description {
+    overflow: hidden;
+    text-align: center;
+    margin: 5px;
+    font-size: 16px;
+    color: #d1d1d1;
+}
+
+.game-card-genre {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 5px;
+    font-size: 14px;
+    color: #d1d1d1;
+}
+
+.game-card-rating {}
+
+.game-card-developer {}
+
+.view-detail {
+    position: absolute;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    right: 10px;
+    bottom: 7px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(163, 163, 163);
+}
+
+.view-detail:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.game-selection-confirm {
+    width: 160px;
+    height: 60px;
+    background-color: #529ecd;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 20px;
+    border: 1px solid #808080;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 0px 4px 20px #505050;
+}
+
+.game-selection-confirm:hover {
+    background-color: rgb(101, 173, 218);
+}

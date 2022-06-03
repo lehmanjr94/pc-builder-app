@@ -1,0 +1,15 @@
+<div class="content-wrapper noTouch">
+  <form class="game-wrapper-form noTouch" (ngSubmit)="confirm()">
+    <h2>Select all games that interest you</h2>
+    <div class="game-card-wrapper noTouch">
+      <ng-container *ngFor="let game of games; let i = index">
+        <div  class="game-card noTouch" [ngClass]="{'active-game' : game.active}" (click)="toggleSelection(game)">
+          <img src="{{ game.imageUrl }}" class="game-card-image noTouch">
+          <h3 class="game-card-title noTouch">{{ game.title }} </h3>
+          <input type="checkbox" style="display: none" name="{{ game.id }}" [checked]="game.active" [(ngModel)]="game.active">
+        </div>
+      </ng-container>
+    </div>
+    <input type="submit" class="game-selection-confirm noTouch" value="CONTINUE">
+  </form>
+</div>

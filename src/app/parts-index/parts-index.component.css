@@ -1,0 +1,56 @@
+.content-wrapper {
+    width: calc(100vw - var(--sidebar-total));
+    height: calc(100vh - var(--header-total));
+    display: grid;
+}
+
+.part-index-navbar {
+    width: var(--navbar-width);
+    height: 100%;
+    grid-column: 1/2;
+    display: flex;
+    flex-flow: column;
+}
+
+.part-index-navbar-item {
+    width: 100%;
+    height: calc(12.5% - var(--border-size));
+    background: linear-gradient(to right, var(--gradient-dark-gray), var(--gradient-med-gray));
+    border-bottom: var(--border-size) solid var(--border-color);
+}
+
+.part-index-frame {
+  width: calc(100vw - var(--sidebar-total) - var(--navbar-width));
+  height: calc(100vh - var(--header-total));
+  grid-column: 2/3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  direction: rtl;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(3rem);
+  scroll-snap-type: y mandatory;
+}
+
+.part-index-frame::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  background-color: black;
+}
+
+.part-index-frame::-webkit-scrollbar-button {
+    display: none;
+}
+
+.part-index-frame::-webkit-scrollbar-thumb {
+    width: var(--scrollbar-width);
+    background-color: var(--light-gray);
+}
+
+.part-index-frame::-webkit-scrollbar-track {
+  width: var(--scrollbar-width);
+}
+
+.snap-point {
+  scroll-snap-align: start;
+}

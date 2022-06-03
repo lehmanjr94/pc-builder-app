@@ -1,0 +1,18 @@
+<div class="content-wrapper noTouch">
+  <div class="part-index-navbar">
+    <ng-container *ngFor="let component of components">
+      <div class="part-index-navbar-item" (click)="scrollTo(component)"></div>
+    </ng-container>
+  </div>
+    <div class="part-index-frame" id="part-index-frame">
+      <div id="summary" class="snap-point">  <app-summary></app-summary></div>
+      <div id="cpu" class="snap-point">      <app-cpu></app-cpu></div>
+      <div id="gpu" class="snap-point">      <app-gpu></app-gpu></div>
+      <div id="ram" class="snap-point">      <app-ram></app-ram></div>
+      <div id="psu" class="snap-point">      <app-psu></app-psu></div>
+      <div id="case" class="snap-point">     <app-case></app-case></div>
+      <div id="monitor" class="snap-point">  <app-monitor></app-monitor></div>
+      <div id="keyboard" class="snap-point"> <app-keyboard></app-keyboard></div>
+      <div id="mouse" class="snap-point">    <app-mouse></app-mouse></div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+.content-wrapper {
+  height: calc(100vh - var(--header-total));
+  width: calc(100vw - var(--sidebar-total) - var(--navbar-width) - var(--scrollbar-width));
+  background-color: var(--background-color);
+  direction: ltr;
+}

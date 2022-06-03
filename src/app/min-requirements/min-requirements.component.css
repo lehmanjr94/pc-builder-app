@@ -1,0 +1,86 @@
+.noTouch {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  background-color: #303030;
+  border-radius: 5px;
+}
+
+.content-wrapper {
+  width: min(80vw, 1040px);
+  height: max-content;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #0c0c0c;
+  display: flex;
+  flex-flow: column;
+}
+
+.card-wrapper {
+  width: calc(100% - 2rem);
+  max-height: calc(100% - 110px - 2rem);
+  margin: 10px auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, min(280px, calc(25% - 15px)));
+  grid-template-rows: repeat(2, 282px);
+  row-gap: 20px;
+  column-gap: 20px;
+  margin-bottom: auto;
+}
+
+.card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.component-card {
+  background-color: #292929;
+  color: white;
+  width: calc(100% - 4px);
+  height: calc(100% - 20px);
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #1f1f1f;
+  transition: 0.15s ease-in-out;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+
+}
+
+.component-card:hover {
+  background-color: rgb(93, 93, 93);
+}
+
+
+
+.get-reqs {
+  width: 160px;
+  height: 60px;
+  background-color: #529ecd;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid #808080;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.get-reqs:hover {
+  background-color: rgb(101, 173, 218);
+}

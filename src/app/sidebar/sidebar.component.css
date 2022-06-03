@@ -1,0 +1,22 @@
+.sidebar-wrapper {
+  position: absolute;
+  top: var(--header-total);
+  height: calc(100vh - var(--header-total) - 2*var(--padding-base));
+  width: var(--sidebar-width);
+  background-color: #0c0c0c;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: var(--padding-base);
+  row-gap: var(--gap-base);
+}
+
+.sidebar-link {
+  color: white;
+  cursor: pointer;
+  max-width: 80%;
+}
+
+.sidebar-link:hover {
+  transform: scale(1.1);
+}

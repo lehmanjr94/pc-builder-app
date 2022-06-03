@@ -1,0 +1,43 @@
+<div class="content-wrapper noTouch">
+  <h2>Select a component to start customizing</h2>
+  <div class="card-wrapper noTouch">
+
+    <div class="component-card noTouch" (click)="focus(this)" id="gpu-card">
+      <p><strong>Minimum GPU Speed: </strong>{{ minReqs.gpuSpeed }} GHz</p>
+      <p><strong>Minimum GPU Ram: </strong>{{ minReqs.gpuRam }} GB</p>
+    </div>
+
+    <div class="component-card noTouch" (click)="focus(this)"  id="cpu-card">
+      <p><strong>Minimum CPU Speed: </strong>{{ minReqs.cpuSpeed }} GHz</p>
+      <p><strong>Minimum CPU Cores: </strong>{{ minReqs.cpuCores }} Cores</p>
+    </div>
+
+    <div class="component-card noTouch" (click)="focus(this)" id="ram-card">
+      <p><strong>Minimum Ram Speed: </strong>{{ minReqs.ramSpeed }} mHz</p>
+      <p><strong>Minimum Ram Capacity: </strong>{{ minReqs.ramCapacity }} GB</p>
+    </div>
+
+    <div class="component-card noTouch" (click)="focus(this)" id="psu-card">
+
+    </div>
+
+    <div class="component-card noTouch" (click)="focus(this)" id="case-card">
+
+    </div>
+
+    <div class="component-card noTouch" (click)="focus(this)" id="psu-card">
+
+    </div>
+
+    <div class="component-card noTouch" (click)="focus(this)" id="monitor-card">
+
+    </div>
+
+    <div class="component-card noTouch" (click)="focus(this)" id="gpu-card">
+
+    </div>
+
+  </div>
+
+  <button (click)="determineRequirements()" class="get-reqs">GET REQS</button>
+</div>
